@@ -10,8 +10,8 @@ export function Home() {
 
   return (
     <View style={styles.container}>
-      <StatusBar style="auto"/>
-      
+      <StatusBar style="auto" />
+
       <View style={styles.header}>
         <Pressable style={styles.backButton}>
           <Feather
@@ -47,7 +47,12 @@ export function Home() {
         alignItems: 'center',
         justifyContent: 'center',
       }}>
-        <Text style={{color: '#FFF', fontSize: 24}}>Restante do App!! 😄</Text>
+        <Text style={{
+          fontSize: 24,
+          color: '#FFF',
+        }}>
+          Restante do App!! 😄
+        </Text>
       </View>
     </View>
   )
