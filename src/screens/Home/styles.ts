@@ -4,11 +4,12 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 32,
-
+    backgroundColor: '#003049'
   },
   header: {
     width: '100%',
     flexDirection: 'row',
+    marginTop: 30,
   },
   backButton: {
     width: 42,
@@ -20,8 +21,8 @@ export const styles = StyleSheet.create({
   },
   options: {
     flex: 1,
+    gap: 7,
     flexDirection: 'row',
     justifyContent: 'flex-end',
-    gap: 7
   }
 });
