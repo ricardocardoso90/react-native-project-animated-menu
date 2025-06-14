@@ -10,7 +10,7 @@ export function Home() {
 
   return (
     <View style={styles.container}>
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
 
       <View style={styles.header}>
         <Pressable style={styles.backButton}>
@@ -27,12 +27,14 @@ export function Home() {
             onPress={() => setOption("home")}
             isSelected={option === "home"}
           />
+
           <Option
             title="Documentos"
             icon="file-text"
             onPress={() => setOption("documentos")}
             isSelected={option === "documentos"}
           />
+          
           <Option
             title="Notificações"
             icon="bell"
