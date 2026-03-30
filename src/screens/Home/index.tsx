@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { styles } from "./styles";
-import { Feather } from '@expo/vector-icons';
+import { Feather } from "@expo/vector-icons";
 import { Pressable, Text, View } from "react-native";
 import { Option } from "../../components/option";
 import { StatusBar } from "expo-status-bar";
@@ -14,10 +14,7 @@ export function Home() {
 
       <View style={styles.header}>
         <Pressable style={styles.backButton}>
-          <Feather
-            size={18}
-            name="chevron-left"
-          />
+          <Feather size={18} name="chevron-left" />
         </Pressable>
 
         <View style={styles.options}>
@@ -34,7 +31,7 @@ export function Home() {
             onPress={() => setOption("documentos")}
             isSelected={option === "documentos"}
           />
-          
+
           <Option
             title="Notificações"
             icon="bell"
@@ -42,20 +39,23 @@ export function Home() {
             isSelected={option === "notificações"}
           />
         </View>
-
       </View>
-      <View style={{
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}>
-        <Text style={{
-          fontSize: 24,
-          color: '#FFF',
-        }}>
+      <View
+        style={{
+          flex: 1,
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Text
+          style={{
+            fontSize: 24,
+            color: "#FFF",
+          }}
+        >
           Restante do App!! 😄
         </Text>
       </View>
     </View>
-  )
-};
+  );
+}
